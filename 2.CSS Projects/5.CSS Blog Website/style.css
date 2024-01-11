@@ -16,3 +16,7 @@ div.center {
     margin: 10px auto;
     text-align: start;
 }
+
+hr {
+    border: 2px solid rgba(0, 0, 0, 0.7);
+}
