@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    border: 2px solid black;
+    width: 282px;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 0px 7px;
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.15px;
+}
+
+hr {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
