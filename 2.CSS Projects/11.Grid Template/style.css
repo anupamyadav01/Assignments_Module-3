@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    color: #000;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --font-color: hsl(0 0% 100%);
+}
+
+body {
+    background-color: #ecf2f8;
+}
+
+.container {
+    padding: 2rem 0;
+    width: 1120px;
+    min-height: 100vh;
+    margin: 0px auto;
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+
+    gap: 20px;
+    grid-template-areas:
+        "first first second third"
+        "fourth fifth fifth third";
+}
+
+.box {
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+
+}
+
+.box p {
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+.first {
+    background-color: #7541c8;
+    grid-area: first;
+
+}
+
+.second {
+    background-color: #48556a;
+    grid-area: second;
+}
+
+.third {
+    background-color: #ffffff;
+    grid-area: third;
+}
+
+.third p,
+.fourth p {
+    color: #000;
+}
+
+.fourth {
+    background-color: #ffffff;
+    grid-area: fourth;
+}
+
+.fifth {
+    background-color: #19212e;
+    grid-area: fifth;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.pf-content p:first-child {
+    font-size: 13px;
+}
+
+.pf-content p:last-child {
+    font-size: 11px;
+    color: hsl(0 0% 100%);
+    opacity: 0.5;
+}
+
+.pf-img {
+    height: 28px;
+    width: 28px;
+}
+
+.pf-img img {
+    display: block;
+    width: 1.75rem;
+    border-radius: 50%;
+}
+
+.box>p:first-of-type {
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-top: 1em;
+}
+
+.box>p:last-of-type {
+    opacity: 0.7;
+    font-size: 13px;
+    margin-top: 1em;
+}
+
+.bg-img {
+    background-image: url(./img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
