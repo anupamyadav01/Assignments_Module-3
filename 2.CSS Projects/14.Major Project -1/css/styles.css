@@ -1488,11 +1488,12 @@ input[type="checkbox"] {
   z-index: 100000;
   background-color: #13aa87;
   background: #14bf98 url(../images/up-arrow.png) no-repeat center 47%;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .back-to-top:hover.back-to-top {
   background-color: #eac211;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .ex-header {
